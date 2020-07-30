@@ -27,7 +27,7 @@
             <div class="level-item comments data">
               <%= link_to shot do %>
                 <span class="icon"><i class="fa fa-comment"></i></span>
-                 0
+                 <%= shot.comments.count %>
               <% end %>
             </div>
             <div class="level-item likes">
