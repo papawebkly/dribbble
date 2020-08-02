@@ -90,9 +90,16 @@ document.addEventListener("turbolinks:load", function() {
 					}, false);
 				}
 			}
+		},
+		shotHover() {
+			$('.shot').hover(function(){
+				$(this).children('.shot-data').toggleClass('visible');
+			})
 		}
+
 
 	};
 	Shots.previewShot();
+	Shots.shotHover();
 
 });
